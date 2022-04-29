@@ -1,9 +1,13 @@
-import React from 'react'
-import { Text } from 'react-native'
+import { useState} from 'react'
+import { Text, View, SafeArea, FlatList } from 'react-native'
+
+import { COLORS, MFTData } from '../Constants'
 
 const Home = () => {
   return (
-    <Text>Home</Text>
+    <View>
+      <Text>Home</Text>
+    </View>
   )
 }
 
