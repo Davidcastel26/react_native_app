@@ -1,7 +1,7 @@
-import { useState} from 'react'
-import { Text, View, SafeAreaView, FlatList } from 'react-native'
+import { useState } from 'react'
+import { View, SafeAreaView, FlatList } from 'react-native'
 
-import { COLORS, MFTData, NFTData } from '../Constants'
+import { COLORS, NFTData } from '../Constants'
 import { NFTCard, HomeHeader, FocusedStatusBar } from '../components'
 
 const Home = () => {
