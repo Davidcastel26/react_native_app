@@ -1,4 +1,5 @@
-import { View, Text } from 'react-native'
+import { StatusBar } from 'react-native';
+import { useIsFocused } from '@react-navigation/native';
 import React from 'react'
 
 const FocusedStatusBar = () => {
