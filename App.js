@@ -16,6 +16,11 @@ const theme = {
 }
 
 const App = () => {
+
+  const [loaded] = useFonts({
+    InterBold: require("./assets/fonts/Inter-Bold.ttf")
+  })
+
   return (
     <NavigationContainer theme={theme}>
       <Stack.Navigator screenOptions={{headerShown:false}} initialRouteName='Home'>
@@ -27,3 +32,5 @@ const App = () => {
 }
 
 export default App;
+
+//stayce  bcoa  
