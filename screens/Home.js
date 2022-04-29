@@ -1,13 +1,14 @@
 import { useState} from 'react'
-import { Text, View, SafeArea, FlatList } from 'react-native'
+import { Text, View, SafeAreaView, FlatList } from 'react-native'
 
 import { COLORS, MFTData } from '../Constants'
+import { NFTCard, HomeHeader, FocusedStatusBar } from '../components'
 
 const Home = () => {
   return (
-    <View>
-      <Text>Home</Text>
-    </View>
+    <SafeAreaView style={{flex: 1}}>
+      <FocusedStatusBar background={COLORS.primary} />
+    </SafeAreaView>
   )
 }
 
