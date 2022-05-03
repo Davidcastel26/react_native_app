@@ -10,7 +10,7 @@ export const NFTTitle = () => {
 }
 
 
-export const Eth = () => {
+export const EthPrice = () => {
   return (
     <Text>hi</Text>
   )
