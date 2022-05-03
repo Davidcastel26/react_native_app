@@ -1,41 +1,64 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import { View, Text, Image } from "react-native";
+import React from "react";
+import { SIZES, assets, FONTS, SHADOWS, COLORS } from "../Constants";
 
 export const NFTTitle = () => {
   return (
     <View>
       <Text>SubInfo</Text>
     </View>
-  )
-}
-
+  );
+};
 
 export const EthPrice = () => {
-  return (
-    <Text>hi</Text>
-  )
-}
+  return <Text>hi</Text>;
+};
 
-export const ImageCmp = () => {
+export const ImageCmp = ({ imgUrl, index }) => {
   return (
-    <Text>hi</Text>
-  )
-}
+    <Image
+      source={imgUrl}
+      resizeMode="contain"
+      style={{
+        width: 48,
+        height: 48,
+        marginLeft: index === 0 ? 0 : -SIZES.font,
+      }}
+    />
+  );
+};
 
 export const People = () => {
   return (
-    <Text>hi</Text>
-  )
-}
+    <View style={{ flexDirection: "row" }}>
+      {
+        [assets.person02, assets.person03, assets.person04].map(
+          (imgUrl, index) => (
+            <ImageCmp imgUrl={imgUrl} index={index} key={`People-${index}`} />
+          )
+        )
+      }
+    </View>
+  );
+};
 
 export const EndDate = () => {
-  return (
-    <Text>hi</Text>
-  )
-}
+  return <Text>hi</Text>;
+};
 
 export const SubInfo = () => {
   return (
-    <Text>hi</Text>
-  )
-}
+    <View
+      style={{
+        width: "100%",
+        paddingHorizontal: SIZES.font,
+        marginTop: -SIZES.extraLarge,
+        flexDirection: "row",
+        justifyContent: "space-between",
+      }}
+    >
+      <People />
+      <EndDate />
+    </View>
+  );
+};
