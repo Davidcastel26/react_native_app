@@ -2,10 +2,10 @@ import { View, Text, Image } from "react-native";
 import React from "react";
 import { SIZES, assets, FONTS, SHADOWS, COLORS } from "../Constants";
 
-export const NFTTitle = () => {
+export const NFTTitle = ({title, subTitle, titleSize, subTitleSize }) => {
   return (
     <View>
-      <Text>SubInfo</Text>
+      <Text>{title}</Text>
     </View>
   );
 };
