@@ -8,3 +8,11 @@ export const CircleButton = () => {
     </View>
   )
 }
+
+export const RectButton = () => {
+  return (
+    <View>
+      <Text> hELLO </Text>
+    </View>
+  )
+}
