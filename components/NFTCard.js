@@ -48,7 +48,7 @@ const NFTCard = ({data}) => {
             alignItems: 'center'
           }}
         >
-          <EthPrice />
+          <EthPrice price={data.price} />
           <RectButton />
         </View>
       </View>
