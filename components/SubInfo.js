@@ -5,8 +5,8 @@ import { SIZES, assets, FONTS, SHADOWS, COLORS } from "../Constants";
 export const NFTTitle = ({title, subTitle, titleSize, subTitleSize }) => {
   return (
     <View>
-      <Text style={{fontFamily: FONTS.semiBold, fontSize: titleSize, color: COLORS.primary }}>{title}</Text>
-      <Text style={{fontFamily: FONTS.regular, fontSize: subTitleSize, color: COLORS.primary }}>{subTitle}</Text>
+      <Text style={{fontWeight:'600', fontSize: titleSize, color: COLORS.primary }}>{title}</Text>
+      <Text style={{fontWeight:'400', fontSize: subTitleSize, color: COLORS.primary }}>{subTitle}</Text>
     </View>
   );
 };
@@ -23,7 +23,7 @@ export const EthPrice = ({price}) => {
       />
       <Text 
         style={{
-          fontFamily: FONTS.medium,
+          fontWeight:'500',
           fontSize: SIZES.font,
           color: COLORS.primary
         }}
