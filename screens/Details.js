@@ -15,7 +15,17 @@ const Details = ({ route, navigation}) => {
         backgroundColor="transparent"
         transLucent={true}
       >
-        <View>
+        <View 
+          style={{
+            width: '100%',
+            position:'absolute',
+            bottom:0,
+            paddingVertical:SIZES.font,
+            justifyContent:'center',
+            alignItems:'center',
+            backgroundColor:'rgba(255, 255, 255, 0.5)'
+          }}
+        >
           <RectButton minWidth={170} fontSize={SIZES.large} {...SHADOWS.dark}/>
         </View>
       </FocusedStatusBar>

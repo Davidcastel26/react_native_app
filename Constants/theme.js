@@ -18,7 +18,7 @@ export const SIZES = {
 export const FONTS = {
   bold: "InterBold",
   semiBold: "InterSemiBold",
-  medium: "InterMedium",
+  medium: "Inter-Medium",
   regular: "InterRegular",
   light: "InterLight",
 };
