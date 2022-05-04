@@ -16,11 +16,11 @@ export const SIZES = {
 };
 
 export const FONTS = {
-  bold: "InterBold",
-  semiBold: "InterSemiBold",
-  medium: "Inter-Medium",
-  regular: "InterRegular",
-  light: "InterLight",
+  bold: "bold",
+  semiBold: "semiBold",
+  medium: "medium",
+  regular: "regular",
+  light: "light",
 };
 
 export const SHADOWS = {
