@@ -31,12 +31,12 @@ const HomeHeader = ({ onSearch }) => {
         style={{ marginVertical: SIZES.font}}
       >
         <Text
-          style={{fontFamily:FONTS.regular, fontSize: SIZES.small, color: COLORS.white}}
+          style={{fontWeight:'400', fontSize: SIZES.small, color: COLORS.white}}
         >
           Hello Dave 👋
         </Text>
         <Text
-          style={{fontFamily:FONTS.bold, fontSize: SIZES.large, marginTop:SIZES.base / 2, color: COLORS.white}}
+          style={{fontWeight:'700', fontSize: SIZES.large, marginTop:SIZES.base / 2, color: COLORS.white}}
         >
           Let's find a masterpiece
         </Text>
