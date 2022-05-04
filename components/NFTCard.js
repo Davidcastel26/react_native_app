@@ -52,7 +52,7 @@ const NFTCard = ({data}) => {
           <RectButton 
             minWidth={120} 
             fontSize={SIZES.font} 
-            handlePress={() => navigation.navigate('Detail', { data })}
+            handlePress={() => navigation.navigate('Details', { data })}
           />
         </View>
       </View>
