@@ -33,7 +33,7 @@ const HomeHeader = () => {
         <Text
           style={{fontFamily:FONTS.regular, fontSize: SIZES.small, color: COLORS.white}}
         >
-          Hello Dave
+          Hello Dave 👋
         </Text>
       </View>
     </View>
