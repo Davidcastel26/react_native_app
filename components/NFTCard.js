@@ -2,7 +2,8 @@ import { View, Image } from 'react-native'
 import { useNavigation } from '@react-navigation/native'
 
 import { COLORS, SIZES, SHADOWS, assets } from '../Constants'
-import { SubInfo, EthPrice, NFTTitle,CircleButton, RectButton } from './index'
+import { SubInfo, EthPrice, NFTTitle } from './index'
+import { CircleButton, RectButton } from './Button'
 
 const NFTCard = ({data}) => {
 
