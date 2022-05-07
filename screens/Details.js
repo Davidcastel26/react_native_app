@@ -23,7 +23,8 @@ const Details = ({ route, navigation}) => {
             paddingVertical:SIZES.font,
             justifyContent:'center',
             alignItems:'center',
-            backgroundColor:'rgba(255, 255, 255, 0.5)'
+            backgroundColor:'rgba(255, 255, 255, 0.5)',
+            zIndex: 1
           }}
         >
           <RectButton minWidth={170} fontSize={SIZES.large} {...SHADOWS.dark}/>
@@ -33,4 +34,4 @@ const Details = ({ route, navigation}) => {
   )
 }
 
-export default Details
+export default Details 
