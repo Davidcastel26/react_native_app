@@ -26,7 +26,7 @@ const DetailsHeader = ({ data, navigation }) => (
     }}
   >
     <Image
-      source={data.image}
+      source={data?.image}
       resizeMode="cover"
       style={{ width: "100%", height: "100%" }}
     />
@@ -55,7 +55,7 @@ const Details = ({ route, navigation }) => {
       <FocusedStatusBar
         barStyle="dark-content"
         backgroundColor="transparent"
-        translucent={true}
+        transLucent={true}
       />
       <View
         style={{
@@ -65,7 +65,7 @@ const Details = ({ route, navigation }) => {
           paddingVertical: SIZES.font,
           justifyContent: "center",
           alignItems: "center",
-          backgroundColor: "rgba(255,255,255,0.5)",
+          backgroundColor: "rgba(255,255,255, 0.5)",
           zIndex: 1,
         }}
       >
@@ -76,7 +76,7 @@ const Details = ({ route, navigation }) => {
         data={data.bids}
         renderItem={({ item }) => <DetailsBid bid={item} />}
         keyExtractor={(item) => item.id}
-        showVerticalScrollIndicator={false}
+        showsVerticalScrollIndicator={false}
         contentContainerStyle={{ paddingBottom: SIZES.extraLarge * 3 }}
         ListHeaderComponent={() => (
           <React.Fragment>
