@@ -85,7 +85,7 @@ const Details = ({ route, navigation }) => {
             <View
               style={{ padding: SIZES.font }}
             >
-              <DetailsDes />
+              <DetailsDes data={data}/>
             </View>
           </React.Fragment>
         )}
