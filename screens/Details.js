@@ -18,25 +18,33 @@ import {
   DetailsBid,
 } from "../components";
 
-const DetailsHeader = ({data, navigation}) => (
-  <View 
+const DetailsHeader = ({ data, navigation }) => (
+  <View
     style={{
-      width:'100%',
-      height: 373
+      width: "100%",
+      height: 373,
     }}
   >
     <Image
-      source={data.Image}
+      source={data.image}
       resizeMode="cover"
-      style={{ width: '100%', height: '100%'}}
+      style={{ width: "100%", height: "100%" }}
     />
 
-    <CircleButton 
+    <CircleButton
       imgUrl={assets.left}
-      handlePress={()=>navigation.goBack()}
+      handlePress={() => navigation.goBack()}
+      left={15}
+      top={StatusBar.currentHeight + 10}
+    />
+
+    <CircleButton
+      imgUrl={assets.heart}
+      right={15}
+      top={StatusBar.currentHeight + 10}
     />
   </View>
-)
+);
 
 const Details = ({ route, navigation }) => {
   // console.log(route);
@@ -69,10 +77,16 @@ const Details = ({ route, navigation }) => {
         renderItem={({ item }) => <DetailsBid bid={item} />}
         keyExtractor={(item) => item.id}
         showVerticalScrollIndicator={false}
-        contentContainerStyle={{ paddingBottom: SIZES.extraLarge * 3}}
-        ListHeaderComponent={()=>(
+        contentContainerStyle={{ paddingBottom: SIZES.extraLarge * 3 }}
+        ListHeaderComponent={() => (
           <React.Fragment>
             <DetailsHeader data={data} navigation={navigation} />
+            <SubInfo />
+            <View
+              style={{ padding: SIZES.font }}
+            >
+              <DetailsDes />
+            </View>
           </React.Fragment>
         )}
       />
