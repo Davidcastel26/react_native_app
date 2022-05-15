@@ -51,7 +51,7 @@ const Details = ({ route, navigation }) => {
   const { data } = route.params;
 
   return (
-    <SafeAreaView style={{ flex: 1 }}>
+    <SafeAreaView style={{ flex: 1, backgroundColor:'white' }}>
       <FocusedStatusBar
         barStyle="dark-content"
         backgroundColor="transparent"
