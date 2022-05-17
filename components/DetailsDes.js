@@ -51,7 +51,7 @@ const DetailsDes = ({ data }) => {
             <Text
               style={{
                 fontSize: SIZES.small,
-                fontWeight: "500",
+                fontWeight: "800",
                 color: COLORS.primary
               }}
               onPress={() => {
@@ -61,11 +61,11 @@ const DetailsDes = ({ data }) => {
                 }
                 else{
                   setText(data.description.slice(0, 100))
-                  serReadMore(false)
+                  setReadMore(false)
                 }
               }}
             >
-              {readMore ? ' Show Less' : "Read More"}
+              {readMore ? ' Show Less' : " Read More"}
             </Text>
           </Text>
         </View>
