@@ -86,6 +86,16 @@ const Details = ({ route, navigation }) => {
               style={{ padding: SIZES.font }}
             >
               <DetailsDes data={data}/>
+
+              {data.bids.length > 0 && (
+                <Text style={{
+                  fontSize: SIZES.font,
+                  fontWeight: '600',
+                  color: COLORS.primary
+                }}>
+                  Current Bid
+                </Text>
+              )}
             </View>
           </React.Fragment>
         )}
