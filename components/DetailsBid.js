@@ -1,10 +1,44 @@
-import { View, Text } from 'react-native'
+import { View, Text, Image } from 'react-native'
 import React from 'react'
 
-const DetailsBid = () => {
+import { EthPrice } from './SubInfo'
+import { COLORS, SIZES, FONTS } from '../Constants'
+
+const DetailsBid = ({bid}) => {
   return (
-    <View>
-      <Text>DetailsBid</Text>
+    <View style={{
+      width: '100%',
+      flexDirection: 'row',
+      justifyContent:'space-between',
+
+    }}>
+      <Image
+        source={bid.image}
+        resizeMode="contain"
+        style={{
+          width: 48,
+          height: 48
+        }}
+      />
+      <View>
+        <Text style={{
+          fontWeight:'600',
+          fontSize: SIZES.small,
+          color: COLORS.primary
+        }}> 
+          Bid placed by {bid.name}
+        </Text>
+        <Text style={{
+          fontWeight:'400',
+          fontSize: SIZES.small - 2,
+          color: COLORS.secondary,
+          marginTop: 3
+        }}> 
+          {bid.date}
+        </Text>
+      </View>
+
+      <EthPrice price={bid.price} />
     </View>
   )
 }
